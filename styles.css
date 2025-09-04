@@ -1,0 +1,49 @@
+:root {
+    --bg: #fbf1c7;
+    --fg: #282828;
+    --orange: #fe8019;
+}
+body {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: 'Courier New', Courier, monospace;
+    padding: none;
+    margin: 0;
+}
+
+.section__intro {
+    background-image: url('./images/bg_image.png');
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 48px;
+    /* color: var(--bg) !important; */
+    /* padding: 10px; */
+}
+
+.intro__container {
+    padding: 2rem;
+    text-align: left;
+    color: var(--orange);
+}
+
+.image__monster {
+    transform: rotateZ(20deg);
+}
+.image__water {
+    transform: rotateZ(-10deg);
+}
+
+.image__newjeans {
+    transform: rotateZ(15deg);
+}
+
+img:hover  {
+    scale: 1.1;
+}
+
+a:hover {
+    text-decoration: underline;
+}
