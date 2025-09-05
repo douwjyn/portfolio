@@ -5,36 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .double_image {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+      }
+      @media screen and (max-width: 768px) {
+        .double_image {
+          flex-direction: column !important;
+        }
+
+      }
+    </style>
   </head>
-  <body>
-    <div style="display: flex; flex-direction:column; align-items: center">
-        <div style="display: flex; flex-direction:row; align-items: center">
-          <img width="90" height="90" src="./images/computer.png" />
-          <h3>Computer Programming Class 2024-2025</h3>
-        </div>
-        <div>
-          <img width="500" src="./images/cp_class1.jpg" alt="">
-          <img width="500" src="./images/cp_class2.jpg" alt="">
-        </div>
+  <body style="padding: 2rem">
+    <div style="display: flex; flex-direction: column">
+      <div style="display: flex; flex-direction: row; align-items: center">
+        <img width="90" height="90" src="./images/computer.png" />
+        <h3>Computer Programming Class 2024-2025</h3>
+      </div>
+      <div class="double_image"> 
+        <img width="400" src="./images/cp_class1.jpg" alt="" />
+        <img width="400" src="./images/cp_class2.jpg" alt="" />
+      </div>
     </div>
 
-
-     <div style="display: flex; flex-direction:column; align-items: center">
-        <div style="display: flex; flex-direction:row; align-items: center">
-          <img width="90" height="90" src="./images/computer.png" />
-          <h3>Lourdes College: Senior High School Graduation (April 21, 2025)</h3>
-        </div>
-        <div>
-          <img width="500" src="./images/grad.jpg" alt="">
-        </div>
+    <br />
+    <br />
+    <div style="display: flex; flex-direction: column">
+      <div style="display: flex; flex-direction: row; align-items: center">
+        <img width="90" height="90" src="./images/computer.png" />
+        <h3>Lourdes College: Senior High School Graduation (April 21, 2025)</h3>
+      </div>
+      <div>
+        <img width="300" height="300" src="./images/grad.jpg" alt="" />
+      </div>
     </div>
 
-      <!-- Footer -->
-          <div style="margin-top: 22px">
-            <center>
-                <a href="index.html">Home</a>
-            </center>
+    <br />
+    <br />
+    <div style="display: flex; flex-direction: column">
+      <div style="display: flex; flex-direction: row; align-items: center">
+        <img width="90" height="90" src="./images/monster.png" />
+        <h3>Me with a pink Monster</h3>
+      </div>
+      <div class="double_image" >
+        <img width="270" height="300" src="./images/self_1.jpg" alt="" />
+        <img width="270" height="300" src="./images/self_2.jpg" alt="" />
+      </div>
+    </div>
 
-          </div>
+    <br />
+    <br />
+    <div style="display: flex; flex-direction: column">
+      <div style="display: flex; flex-direction: row; align-items: center">
+        <img width="90" height="90" src="./images/exclamation.png" />
+        <h3>My Dream Bike Kawasaki Ninja ZX 10R!! (photo from pinterest)</h3>
+        <img width="90" height="90" src="./images/exclamation.png" />
+      
+      </div>
+      <div class="double_image" >
+        <img width="500" height="500" src="./images/zx_10r.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="margin-top: 22px">
+      <center>
+        <a href="index.html">Home</a>
+      </center>
+    </div>
   </body>
 </html>
