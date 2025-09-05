@@ -2,6 +2,7 @@
     --bg: #fbf1c7;
     --fg: #282828;
     --orange: #fe8019;
+    --red: #cc241d;
 }
 body {
     background-color: var(--bg);
@@ -43,7 +44,16 @@ body {
 img:hover  {
     scale: 1.1;
 }
-
+a {
+    color: var(--orange);
+}
 a:hover {
     text-decoration: underline;
+    cursor: pointer;
+}
+
+.date {
+    color: var(--red);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
