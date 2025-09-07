@@ -40,6 +40,41 @@ body {
     letter-spacing: 4px;
 }
 
+body, .section__intro, .intro__container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+h2, h3, h1 {
+    word-break: break-word;
+}
+
+.intro__container > div[style*="display: flex"] {
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .intro__container {
+        padding: 0.5rem;
+    }
+    .intro__container > div[style*="display: flex"] {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+    ol {
+        padding-left: 1rem;
+    }
+}
+
 .section__intro {
     background-image: url('./images/bg_image.png');
     height: 100%;
