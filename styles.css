@@ -20,6 +20,14 @@
 }
 
 
+@font-face {
+    font-family: "Trash_Hand";
+    src: url("./fonts/TrashHand.TTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 .emphasize {
     font-family: "Monster", sans-serif;
     font-size: 2.2rem;
@@ -33,10 +41,10 @@
 body {
     background-color: var(--bg);
     color: var(--fg);
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
     padding: none;
     margin: 0;
-    font-family: "Grey_Red";
+    font-family: "Trash_Hand";
     letter-spacing: 4px;
     box-sizing: border-box;
 }
@@ -70,6 +78,7 @@ h2, h3, h1 {
 }
 
 .section__intro {
+    position: relative;
     background-image: url('./images/bg_image.png');
     height: 100%;
     width: 100%;
@@ -79,6 +88,22 @@ h2, h3, h1 {
     margin-top: 48px;
     /* color: var(--bg) !important; */
     /* padding: 10px; */
+}
+
+.section__intro::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.section__intro > * {
+    position: relative;
+    z-index: 2;
 }
 
 .intro__container {
@@ -111,6 +136,13 @@ a:hover {
 
 .date {
     color: var(--red);
+    /* color: #ffffcc; */
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Courier', Courier, monospace;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+.project_title {
+    color: #ffffcc;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
