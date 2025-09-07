@@ -4,12 +4,40 @@
     --orange: #fe8019;
     --red: #cc241d;
 }
+
+@font-face {
+    font-family: "Grey_Red";
+    src: url("./fonts/Grey+Red.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Monster";
+    src: url("./fonts/Green_Energy.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.emphasize {
+    font-family: "Monster", sans-serif;
+    font-size: 2.2rem;
+}
+
+.emphasize-sm {
+    font-family: "Monster", sans-serif;
+    font-size: 1.5rem;
+}
+
 body {
     background-color: var(--bg);
     color: var(--fg);
     font-family: 'Courier New', Courier, monospace;
     padding: none;
     margin: 0;
+    font-family: "Grey_Red";
+    letter-spacing: 4px;
 }
 
 .section__intro {
